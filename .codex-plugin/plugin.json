@@ -1,0 +1,53 @@
+{
+  "name": "mako-loop",
+  "version": "0.1.0",
+  "description": "A principal-grade product-engineering loop for AI coding agents with durable coherence harnesses, boss/subagent orchestration, security and database-security review, hard done gates, implementation-grade research, and mode packs for websites, apps, games, launches, and app research/recreation.",
+  "author": {
+    "name": "Chris Wong",
+    "url": "https://jorvek.com"
+  },
+  "license": "MIT",
+  "keywords": [
+    "product-engineering",
+    "principal-review",
+    "app-research",
+    "competitive-analysis",
+    "implementation-research",
+    "recreate-app",
+    "local-ai",
+    "website",
+    "saas",
+    "game",
+    "launch",
+    "coherence",
+    "checkpoint",
+    "done-gate",
+    "subagents",
+    "orchestration",
+    "security-review",
+    "threat-model",
+    "database-security",
+    "sql-security",
+    "workflow",
+    "verification",
+    "shipping"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "MakoLoop",
+    "shortDescription": "Force principal-grade product judgment before code ships.",
+    "longDescription": "Use MakoLoop when a project keeps widening, feeling unfinished, losing coherence across long tasks, or accumulating disconnected features, or when you need to research a world-class app and rebuild an original high-quality equivalent. It includes a durable coherence harness, boss/subagent orchestration with dedicated security and database-security review agents, hard done gates, implementation-grade research, and mode packs for polished websites, SaaS/product apps, games, launch readiness, and app research/recreation. It forces product compression, competitive research, architecture fit, negative work, implementation, proof, and ship/no-ship review while keeping the main session agent responsible for scope, integration, deploy decisions, and final completion.",
+    "developerName": "Chris Wong",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Interactive",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "Use MakoLoop on this app.",
+      "Run boss/subagent orchestration for this build.",
+      "Produce implementation-grade research for this build."
+    ],
+    "brandColor": "#0F766E"
+  }
+}

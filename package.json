@@ -1,0 +1,35 @@
+{
+  "name": "mako-loop",
+  "version": "0.1.0",
+  "description": "A principal-grade product-engineering loop for AI coding agents.",
+  "type": "module",
+  "license": "MIT",
+  "author": {
+    "name": "Chris Wong",
+    "url": "https://jorvek.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BitL8-ByteShort/mako-loop.git"
+  },
+  "bugs": {
+    "url": "https://github.com/BitL8-ByteShort/mako-loop/issues"
+  },
+  "homepage": "https://github.com/BitL8-ByteShort/mako-loop#readme",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "validate": "node scripts/validate_repo.mjs",
+    "smoke": "node scripts/validate_repo.mjs"
+  },
+  "keywords": [
+    "codex",
+    "plugin",
+    "ai-agents",
+    "product-engineering",
+    "quality-gate",
+    "subagents",
+    "security-review"
+  ]
+}
