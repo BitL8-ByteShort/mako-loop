@@ -1,4 +1,4 @@
-![MakoLoop animated hero: a glowing cloud-code core with an orbiting mako shark and circular code trails](assets/makoloop-hero.svg)
+[![MakoLoop animated hero: mako shark circling a glowing cloud-code core with code trails](assets/makoloop-hero.gif)](assets/makoloop-hero.mp4)
 
 # MakoLoop
 
