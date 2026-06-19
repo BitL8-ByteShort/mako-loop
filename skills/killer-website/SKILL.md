@@ -23,7 +23,7 @@ If the task includes a modern competitive site, current template source, current
 
 - Existing client site: produce a full browser-crawler rebuild packet before redesign or conversion.
 - No existing client site: research competitors first, then ask only for missing facts and assets.
-- Template/design source: use Envato MCP first for discovery when available, then downloaded Envato files, Stitch/exported HTML/CSS, or another high-quality source.
+- Template/design source: Envato is the hard gate for client-grade work. Use Envato MCP for discovery, or use downloaded Envato files already supplied in the workspace. If neither is available, stop with setup tasks; do not use Stitch/exported HTML/CSS or another source unless the user explicitly approves that bypass after the blocker is reported.
 - Downloaded Envato item: once the user places the downloaded files in the workspace from a subscribed account, treat them as ready to use.
 - Implementation target: convert all websites to Next.js App Router + TypeScript for Vercel.
 - Styling: use existing repo styling if present; otherwise use plain CSS/global CSS by default to preserve the selected template identity. Use Tailwind only when the repo or template is Tailwind-native.
@@ -37,6 +37,7 @@ Stop and report the exact blocker when any client-grade requirement is unavailab
 
 - Existing-site browser crawler cannot run.
 - Full rebuild packet cannot be produced.
+- Envato MCP is not callable for client-grade template discovery and no downloaded Envato template has been supplied.
 - Required template/source files are missing.
 - Docker/crawler access is unavailable for an existing-site rebuild.
 - Factual content boundaries are unclear.
