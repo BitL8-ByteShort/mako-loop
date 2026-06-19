@@ -43,7 +43,7 @@ Hard gates:
 
 - Existing-site projects require a full browser-crawler rebuild packet.
 - No-existing-site projects require competitor research and a missing-facts intake.
-- A real template/design source is required, with Envato as the priority discovery source.
+- Envato MCP template discovery is required unless a downloaded Envato template has already been supplied in the workspace.
 - Factual content boundaries are required.
 - Vercel preview and launch-grade verification are required.
 
@@ -153,19 +153,26 @@ If something is not in the packet or explicitly provided by the user/client, do 
 
 Use real design sources instead of inventing layout from scratch.
 
+Client-grade Envato gate:
+
+- Envato MCP discovery is mandatory before any non-Envato fallback.
+- If Envato MCP is missing, not exposed, or not callable, stop after the rebuild packet and produce setup tasks.
+- A downloaded Envato item in the workspace satisfies the gate.
+- Do not use Stitch/exported HTML/CSS or another non-Envato source merely because it exists. That bypass requires explicit user approval after the Envato blocker is reported.
+
 Source priority:
 
 1. Envato MCP for template discovery and metadata.
 2. Downloaded Envato template files supplied by the user into the workspace.
-3. Stitch/exported HTML/CSS when available.
-4. Other high-quality template sources or references when Envato is unsuitable.
+3. Stitch/exported HTML/CSS only after Envato discovery has run, a downloaded Envato item is unavailable or unsuitable, and the user explicitly approves the non-Envato source.
+4. Other high-quality template sources or references only after Envato discovery has run, a downloaded Envato item is unavailable or unsuitable, and the user explicitly approves the non-Envato source.
 
 Envato rule:
 
 - Envato MCP is for discovery and candidate comparison.
 - Once the user downloads the Envato item into the workspace from a subscribed account, treat it as cleared and ready to use.
 - Do not ask for additional license approval after downloaded Envato files exist in the workspace.
-- If files are missing, ask for the download or choose another source.
+- If files are missing and Envato MCP is not callable, stop and report the setup tasks.
 
 Client-grade selection:
 
