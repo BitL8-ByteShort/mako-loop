@@ -1,106 +1,115 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1680 720" role="img" aria-label="MakoLoop animated hero with a cloud code core, circling mako shark, and code rings">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1680 720" role="img" aria-label="MakoLoop animated hero with a polished cloud-code core, mako shark, and wrapping code orbit">
   <title>MakoLoop</title>
-  <desc>A dark developer-console banner with a glowing cloud-code core, orbiting code rings, and a sleek mako shark.</desc>
+  <desc>A polished dark GitHub README hero for MakoLoop, with a cloud-code core, source-code orbit, and a sleek mako shark.</desc>
   <defs>
     <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
-      <stop offset="0" stop-color="#07101d"/>
-      <stop offset="0.55" stop-color="#0b1b2d"/>
-      <stop offset="1" stop-color="#120f24"/>
+      <stop offset="0" stop-color="#06101d"/>
+      <stop offset="0.48" stop-color="#0b1c2b"/>
+      <stop offset="1" stop-color="#080817"/>
     </linearGradient>
-    <radialGradient id="cloud" cx="45%" cy="30%" r="70%">
-      <stop offset="0" stop-color="#c8b8ff"/>
-      <stop offset="0.42" stop-color="#6f8dff"/>
-      <stop offset="1" stop-color="#123cff"/>
+    <radialGradient id="halo" cx="60%" cy="48%" r="55%">
+      <stop offset="0" stop-color="#2ee6ff" stop-opacity="0.32"/>
+      <stop offset="0.45" stop-color="#4f46e5" stop-opacity="0.2"/>
+      <stop offset="1" stop-color="#06101d" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="cloud" cx="38%" cy="25%" r="78%">
+      <stop offset="0" stop-color="#d9ccff"/>
+      <stop offset="0.38" stop-color="#8d8bff"/>
+      <stop offset="0.72" stop-color="#436cff"/>
+      <stop offset="1" stop-color="#1237d8"/>
     </radialGradient>
     <linearGradient id="shark" x1="0" x2="1" y1="0" y2="1">
-      <stop offset="0" stop-color="#16313f"/>
-      <stop offset="0.45" stop-color="#2c6f83"/>
-      <stop offset="1" stop-color="#061925"/>
+      <stop offset="0" stop-color="#0b2733"/>
+      <stop offset="0.42" stop-color="#176378"/>
+      <stop offset="1" stop-color="#07131d"/>
     </linearGradient>
-    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
-      <feGaussianBlur stdDeviation="10" result="blur"/>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="9" result="blur"/>
       <feMerge>
         <feMergeNode in="blur"/>
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
-    <filter id="soft" x="-25%" y="-25%" width="150%" height="150%">
-      <feDropShadow dx="0" dy="18" stdDeviation="24" flood-color="#1b6dff" flood-opacity="0.35"/>
-      <feDropShadow dx="0" dy="0" stdDeviation="16" flood-color="#9fdcff" flood-opacity="0.55"/>
+    <filter id="shadow" x="-35%" y="-35%" width="170%" height="170%">
+      <feDropShadow dx="0" dy="20" stdDeviation="24" flood-color="#000814" flood-opacity="0.5"/>
+      <feDropShadow dx="0" dy="0" stdDeviation="18" flood-color="#56d8ff" flood-opacity="0.35"/>
     </filter>
-    <path id="orbit1" d="M235 355 C410 120 740 80 1030 190 C1265 278 1408 440 1335 555 C1238 710 822 690 540 595 C286 510 120 455 235 355Z"/>
-    <path id="orbit2" d="M330 450 C470 250 808 210 1085 285 C1330 352 1458 470 1350 565 C1235 668 812 650 520 568 C342 518 250 490 330 450Z"/>
+    <path id="code-orbit" d="M238 386 C376 150 676 89 1014 134 C1324 176 1514 330 1448 478 C1380 631 1011 662 682 591 C386 527 139 499 238 386Z"/>
+    <path id="near-orbit" d="M337 456 C501 292 766 238 1057 275 C1301 306 1464 415 1392 523 C1304 656 919 657 607 582 C410 535 253 509 337 456Z"/>
   </defs>
 
   <rect width="1680" height="720" fill="url(#bg)"/>
-  <g opacity="0.28">
-    <path d="M0 584 C210 512 300 620 500 545 S822 500 1040 560 1372 620 1680 520" fill="none" stroke="#3dd8ff" stroke-width="3"/>
-    <path d="M0 616 C260 560 378 660 590 594 S938 535 1160 610 1462 640 1680 575" fill="none" stroke="#8769ff" stroke-width="2"/>
+  <rect width="1680" height="720" fill="url(#halo)"/>
+
+  <g opacity="0.16" font-family="JetBrains Mono, Cascadia Mono, Menlo, monospace" font-size="18" fill="#d9f8ff">
+    <text x="96" y="102">const outcome = await makoLoop.ship({ proof: true })</text>
+    <text x="1038" y="116">gate: DONE | BLOCKED | RESCOPED</text>
+    <text x="106" y="640">research -&gt; scope -&gt; build -&gt; verify -&gt; launch</text>
+    <text x="1080" y="628">subagents.security.review(database)</text>
   </g>
 
-  <g opacity="0.32" font-family="JetBrains Mono, Cascadia Mono, monospace" font-size="21" fill="#aeeeff">
-    <text x="90" y="130">const loop = await mako.ship()</text>
-    <text x="1120" y="112">verify({ security: true })</text>
-    <text x="106" y="610">research -&gt; build -&gt; verify -&gt; ship</text>
-    <text x="1160" y="650">if (state !== "DONE") continue</text>
+  <g transform="translate(106 190)">
+    <text x="0" y="0" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="98" font-weight="800" fill="#f7fbff">MakoLoop</text>
+    <text x="4" y="48" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="28" fill="#bdefff">Principal-grade product loops for AI coding agents</text>
+    <g transform="translate(2 88)">
+      <rect width="538" height="58" rx="15" fill="#071321" stroke="#285167"/>
+      <text x="28" y="38" font-family="JetBrains Mono, Cascadia Mono, Menlo, monospace" font-size="25" fill="#ecfbff">/mako-loop ship workflow</text>
+    </g>
+    <g transform="translate(2 174)" font-family="Inter, ui-sans-serif, system-ui" font-size="16" font-weight="700">
+      <rect width="118" height="34" rx="17" fill="#082c34" stroke="#36d8ef"/>
+      <rect x="136" width="92" height="34" rx="17" fill="#171d35" stroke="#9b8cff"/>
+      <rect x="246" width="98" height="34" rx="17" fill="#09271d" stroke="#58e694"/>
+      <rect x="362" width="110" height="34" rx="17" fill="#2a1d10" stroke="#f4b554"/>
+      <text x="27" y="23" fill="#c9fbff">Research</text>
+      <text x="162" y="23" fill="#e0d6ff">Build</text>
+      <text x="273" y="23" fill="#d4ffe2">Verify</text>
+      <text x="388" y="23" fill="#ffe4b0">Ship</text>
+    </g>
   </g>
 
-  <g filter="url(#glow)" opacity="0.82">
-    <use href="#orbit1" fill="none" stroke="#7df1ff" stroke-width="4" stroke-dasharray="10 18">
-      <animate attributeName="stroke-dashoffset" from="0" to="-180" dur="9s" repeatCount="indefinite"/>
+  <g filter="url(#glow)">
+    <use href="#code-orbit" fill="none" stroke="#51e8ff" stroke-width="3" stroke-dasharray="4 15" opacity="0.75">
+      <animate attributeName="stroke-dashoffset" from="0" to="-180" dur="11s" repeatCount="indefinite"/>
     </use>
-    <use href="#orbit2" fill="none" stroke="#bd8cff" stroke-width="3" stroke-dasharray="4 16">
-      <animate attributeName="stroke-dashoffset" from="0" to="160" dur="7s" repeatCount="indefinite"/>
+    <use href="#near-orbit" fill="none" stroke="#8b7dff" stroke-width="3" stroke-dasharray="9 18" opacity="0.65">
+      <animate attributeName="stroke-dashoffset" from="0" to="180" dur="8s" repeatCount="indefinite"/>
     </use>
   </g>
 
-  <g opacity="0.65" font-family="JetBrains Mono, Cascadia Mono, monospace" font-size="18" fill="#d7fbff">
+  <g opacity="0.78" font-family="JetBrains Mono, Cascadia Mono, Menlo, monospace" font-size="17" fill="#ccfbff">
     <text>
-      <textPath href="#orbit1" startOffset="4%">Research  Build  Verify  Security  Ship  .mako-loop  DONE  BLOCKED  RESCOPED</textPath>
-      <animate attributeName="opacity" values="0.35;0.9;0.35" dur="5s" repeatCount="indefinite"/>
+      <textPath href="#code-orbit" startOffset="7%">research()  scopeCut()  build()  verify()  securityReview()  ship()</textPath>
+      <animate attributeName="opacity" values="0.35;0.9;0.35" dur="5.5s" repeatCount="indefinite"/>
     </text>
     <text>
-      <textPath href="#orbit2" startOffset="18%">schema  llms.txt  tests  screenshots  source-led  deploy preview</textPath>
-      <animate attributeName="opacity" values="0.85;0.3;0.85" dur="6s" repeatCount="indefinite"/>
+      <textPath href="#near-orbit" startOffset="42%">implementation-grade  source-led  database-safe  launch-ready</textPath>
+      <animate attributeName="opacity" values="0.9;0.35;0.9" dur="6.5s" repeatCount="indefinite"/>
     </text>
   </g>
 
-  <g transform="translate(680 275)" filter="url(#soft)">
-    <path d="M-84 58 C-122 58 -154 27 -154 -12 C-154 -49 -126 -82 -89 -87 C-70 -127 -25 -150 20 -135 C48 -163 98 -158 122 -124 C166 -121 202 -86 202 -42 C202 -12 186 14 162 28 C163 78 122 118 72 118 L-84 118 C-118 118 -145 91 -145 58 C-145 24 -118 -3 -84 -3 C-60 -3 -40 10 -30 30 C-17 10 7 -2 34 2 C62 6 84 27 91 54 C103 45 119 42 133 47 C105 63 78 72 45 72 L-84 72Z" fill="url(#cloud)"/>
-    <path d="M-112 59 C-80 27 -38 50 8 49 C58 48 92 11 146 25" fill="none" stroke="#f4fbff" stroke-opacity="0.78" stroke-width="8" stroke-linecap="round">
-      <animate attributeName="stroke-dasharray" values="20 460;180 300;20 460" dur="4.8s" repeatCount="indefinite"/>
+  <g transform="translate(998 206)" filter="url(#shadow)">
+    <path d="M-78 66 C-120 66 -153 34 -153 -6 C-153 -44 -125 -78 -88 -85 C-65 -128 -17 -151 30 -135 C58 -163 108 -154 131 -119 C176 -114 211 -78 211 -34 C211 -4 195 21 171 36 C171 86 130 125 79 125 L-78 125 C-117 125 -148 98 -148 66 C-148 32 -121 5 -87 5 C-61 5 -40 18 -29 39 C-13 16 13 6 40 12 C70 18 91 41 96 70 C116 55 144 54 164 69 C134 88 96 98 51 98 L-78 98Z" fill="url(#cloud)"/>
+    <path d="M-105 68 C-72 36 -31 56 13 55 C66 53 101 18 154 32" fill="none" stroke="#f8fbff" stroke-opacity="0.82" stroke-width="8" stroke-linecap="round">
+      <animate attributeName="stroke-dasharray" values="20 450;160 310;20 450" dur="5s" repeatCount="indefinite"/>
     </path>
-    <text x="-10" y="46" text-anchor="middle" font-family="JetBrains Mono, Cascadia Mono, monospace" font-size="26" fill="#f8fbff">function makoLoop()</text>
-    <text x="8" y="82" text-anchor="middle" font-family="JetBrains Mono, Cascadia Mono, monospace" font-size="22" fill="#e6efff">return build();</text>
-    <animateTransform attributeName="transform" type="scale" values="1;1.025;1" dur="4s" additive="sum" repeatCount="indefinite"/>
+    <text x="7" y="56" text-anchor="middle" font-family="JetBrains Mono, Cascadia Mono, Menlo, monospace" font-size="24" font-weight="700" fill="#f8fbff">mako.ship()</text>
+    <animateTransform attributeName="transform" type="translate" values="998 206;998 195;998 206" dur="5.4s" repeatCount="indefinite"/>
   </g>
 
-  <g transform="translate(705 500)">
-    <path d="M-18 -16 C100 -84 270 -78 405 -18 C310 15 194 38 70 32 C25 30 -8 12 -18 -16Z" fill="url(#shark)"/>
-    <path d="M70 31 C182 42 290 18 405 -18 C316 62 156 90 22 61 C0 54 -14 38 -18 -16 C-1 9 28 24 70 31Z" fill="#f4fbff"/>
-    <path d="M106 -50 L70 1 L142 -10 Z" fill="#061925"/>
-    <path d="M7 -15 L-92 -57 L-52 2 L-115 44 Z" fill="#113343"/>
-    <path d="M216 29 L174 88 L260 42 Z" fill="#0b2b38"/>
-    <circle cx="360" cy="-14" r="7" fill="#dffaff"/>
-    <circle cx="362" cy="-14" r="3" fill="#061925"/>
-    <path d="M105 -2 C178 10 258 -1 339 -25" fill="none" stroke="#58f2ff" stroke-width="5" stroke-linecap="round" opacity="0.8"/>
-    <path d="M328 4 L370 -5" stroke="#061925" stroke-width="4" stroke-linecap="round"/>
-    <path d="M307 10 L342 2" stroke="#061925" stroke-width="3" stroke-linecap="round"/>
-    <animateTransform attributeName="transform" type="translate" values="705 500;720 488;705 500" dur="5s" repeatCount="indefinite"/>
+  <g transform="translate(906 456)" filter="url(#shadow)">
+    <path d="M-44 -8 C98 -91 302 -82 456 -16 C352 26 213 55 73 49 C18 47 -31 24 -44 -8Z" fill="url(#shark)"/>
+    <path d="M72 49 C208 59 341 28 456 -16 C370 75 185 111 29 76 C-5 68 -36 40 -44 -8 C-20 22 20 46 72 49Z" fill="#f7fbff"/>
+    <path d="M107 -54 L69 12 L157 -7 Z" fill="#061925"/>
+    <path d="M14 -10 L-98 -58 L-56 6 L-122 49 Z" fill="#092532"/>
+    <path d="M234 46 L185 112 L287 60 Z" fill="#092532"/>
+    <path d="M103 6 C192 17 288 2 401 -30" fill="none" stroke="#5af0ff" stroke-width="5" stroke-linecap="round" opacity="0.7"/>
+    <circle cx="407" cy="-18" r="7" fill="#e9fbff"/>
+    <circle cx="409" cy="-18" r="3" fill="#041018"/>
+    <path d="M377 11 L418 1" stroke="#06111a" stroke-width="4" stroke-linecap="round"/>
+    <path d="M344 19 L381 9" stroke="#06111a" stroke-width="3" stroke-linecap="round"/>
+    <animateTransform attributeName="transform" type="translate" values="906 456;930 442;906 456" dur="5.4s" repeatCount="indefinite"/>
   </g>
 
-  <g transform="translate(105 204)">
-    <text x="0" y="0" font-family="Inter, system-ui, sans-serif" font-size="92" font-weight="800" fill="#ffffff">MakoLoop</text>
-    <text x="4" y="54" font-family="Inter, system-ui, sans-serif" font-size="28" fill="#bfefff">Principal-grade product loops for AI coding agents</text>
-    <rect x="4" y="90" width="520" height="54" rx="16" fill="#07121e" stroke="#294961"/>
-    <text x="28" y="126" font-family="JetBrains Mono, Cascadia Mono, monospace" font-size="25" fill="#f3fbff">/mako-loop ship workflow</text>
-    <rect x="4" y="170" width="118" height="34" rx="17" fill="#0e2e38" stroke="#39d8ff"/>
-    <rect x="140" y="170" width="92" height="34" rx="17" fill="#1a2138" stroke="#a78bfa"/>
-    <rect x="250" y="170" width="96" height="34" rx="17" fill="#102a1f" stroke="#65e99a"/>
-    <rect x="364" y="170" width="110" height="34" rx="17" fill="#281d13" stroke="#f6b85c"/>
-    <text x="28" y="194" font-family="Inter, system-ui" font-size="16" fill="#c9fbff">Research</text>
-    <text x="164" y="194" font-family="Inter, system-ui" font-size="16" fill="#e0d6ff">Build</text>
-    <text x="274" y="194" font-family="Inter, system-ui" font-size="16" fill="#d4ffe2">Verify</text>
-    <text x="389" y="194" font-family="Inter, system-ui" font-size="16" fill="#ffe4b0">Ship</text>
-  </g>
+  <path d="M0 591 C239 515 422 641 685 574 C897 519 1052 511 1269 575 C1451 629 1584 602 1680 568" fill="none" stroke="#16516a" stroke-width="3" opacity="0.55"/>
+  <path d="M0 632 C255 574 453 674 709 612 C978 547 1140 621 1365 646 C1491 660 1589 628 1680 600" fill="none" stroke="#604fff" stroke-width="2" opacity="0.34"/>
 </svg>
